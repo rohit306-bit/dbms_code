@@ -1,0 +1,58 @@
+-- create database placementdbms;
+-- use placementdbms;
+
+-- CREATE TABLE employees (
+--     emp_id INT NOT NULL,
+--     first_name VARCHAR(20),
+--     last_name VARCHAR(20),
+--     slary INT,
+--     PRIMARY KEY (emp_id)
+-- );
+
+-- describe employees;
+
+-- select * from employees;
+-- alter table employees add column contact int(10);
+-- desc employees;
+-- select * from employees;
+-- alter table employees rename column contact to job_code;
+-- desc employees;
+-- truncate table employees;
+-- select * from employees;
+
+-- drop table employees;
+-- select * from employees;
+-- drop table employees;
+
+-- CREATE TABLE employees (
+--     emp_id INT NOT NULL,
+--     first_name VARCHAR(20),
+--     last_name VARCHAR(20),
+--     salary INT,
+--     PRIMARY KEY (emp_id)
+-- );
+-- select * from employees;
+-- desc employees;
+
+-- insert into employees (emp_id, first_name, last_name,salary) values (101, 'steven','king',10000);
+-- insert into employees (emp_id, first_name, last_name, salary) values (102, 'edwin','thomas',15000);
+-- insert into employees (emp_id, first_name, last_name, salary) values (106, 'rohit', 'rajat', 25000);
+-- select * from employees;
+-- update employees set last_name='cohen' where emp_id=101;
+-- select * from employees;
+-- delete from employees where emp_id in (101,103);
+-- select * from employees;
+-- select * from employees where emp_id=104;
+-- select * from employees where salary = 25000;
+-- insert into employees (emp_id, first_name, last_name, salary) values (101,'satyam','kumar', null);
+-- select * from employees;
+-- select * from employees where salary between 18000 and 25000;
+-- select * from employees where first_name like 's%';
+-- select * from employees;
+-- select * from employees where salary in (15000,25000,17000);
+-- select * from employees;
+-- select distinct(first_name) from employees;
+
+
+
+
