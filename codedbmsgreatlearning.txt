@@ -52,6 +52,59 @@
 -- select * from employees where salary in (15000,25000,17000);
 -- select * from employees;
 -- select distinct(first_name) from employees;
+-- select count(*) from employees;
+-- select * from employees;
+-- select avg(salary) from employees;
+-- select count(*) from employees;
+-- select max(salary) from employees;
+-- select min(salary) from employees;
+-- select sum(salary) from employees;
+-- select * from employees;
+-- select * from employees where salary is null;
+-- select count(*) from employees;
+-- select * from employees;
+-- alter table employees add column dept_id int(10);
+-- select * from employees;
+-- desc employees;
+-- alter table employees add column dept_id varchar(20);
+-- ALTER TABLE empolyees
+-- DROP COLUMN dept_id;
+-- ALTER TABLE employees DROP dept_id;  
+-- alter table employees add column dept_id varchar(20);
+-- select * from employees;
+-- desc employees; 
+-- update employees set dept_id='support' where emp_id=112;
+-- select * from employees;
+-- select first_name, max(salary), dept_id from employees group by dept_id having count(dept_id)>=2;
+-- select max(salary), dept_id from employees group by dept_id;
+-- select avg(salary), dept_id from employees group by dept_id having count(dept_id)>=2;
+-- select * from employees order by salary desc;
+-- create table department(
+-- dept_id int,
+-- dept varchar(20),
+-- dept_loc varchar(20)
+-- );
+
+-- insert into department values(5, 'support','CA');
+-- delete department set dept_id=3 where dept='sales';
+-- select * from department;
+
+-- create database cricket;
+-- use cricket;
+-- use placementdbms;
+-- select * from cricket_1;
+-- select * from cricket_2;
+-- select * from cricket_1
+-- UNION
+-- select * from cricket_2;
+-- select Player_Name,Popularity from cricket_1 where Popularity > (select avg(Popularity) from cricket_1);
+-- select avg(Popularity) from cricket_1;
+-- select * from cricket_2;
+-- select Player_Name, Player_Id from cricket_1 where cricket_1.Player_Id in (select Player_Id from cricket_2);
+SELECT player_id , player_name FROM cricket_1
+WHERE cricket_1.player_id IN (SELECT player_id FROM cricket_2);
+
+
 
 
 
